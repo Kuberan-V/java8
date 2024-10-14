@@ -1,8 +1,12 @@
 package com.coding.pattern;
 
+import java.util.Scanner;
+
 public class UpperTraingularSpiralMatrix {
     public static void main(String[] args) {
-        int n=3;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number");
+        int n= sc.nextInt();
         int[][] matrix=new int[n][n];
         fillMatrixPattern(matrix,n);
         printMatrix(matrix,n);
