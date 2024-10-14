@@ -1,15 +1,21 @@
 package com.coding.pattern;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class UpperTraingularSpiralMatrix {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number");
-        int n= sc.nextInt();
-        int[][] matrix=new int[n][n];
-        fillMatrixPattern(matrix,n);
-        printMatrix(matrix,n);
+        int n = 0;
+        try {
+            n = sc.nextInt();
+        } catch (InputMismatchException e) {
+            throw new InputMismatchException("Invalid Input");
+        }
+        int[][] matrix = new int[n][n];
+        fillMatrixPattern(matrix, n);
+        printMatrix(matrix, n);
     }
     private static void fillMatrixPattern(int[][] matrix, int n) {
         int value=1;

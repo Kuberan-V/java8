@@ -1,9 +1,14 @@
 package com.coding;
 
+import java.util.Scanner;
+
 public class HourAndMinute {
     public static void main(String[] args) {
-        int hour=11;
-        int minute=50;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the hour");
+        int hour=sc.nextInt();
+        System.out.println("Enter the Minutes");
+        int minute=sc.nextInt();
         if(hour>12 || hour<0 || minute>60 || minute<0)
             System.out.println("wrong input");
         else {
