@@ -2,8 +2,8 @@ package com.coding;
 
 public class HourAndMinute {
     public static void main(String[] args) {
-        int hour=9;
-        int minute=30;
+        int hour=11;
+        int minute=50;
         if(hour>12 || hour<0 || minute>60 || minute<0)
             System.out.println("wrong input");
         else {
